@@ -75,11 +75,11 @@ print()
 
 #Exercício numero 8
 print("Exercício numero 8:")
-num1 = 50
-num2 = 2
+num1 = int(input("Digite o primeiro número inteiro: "))
+num2 = int(input("Digite o segundo número inteiro: "))
 
 resultado_da_multiplicação = num1 * num2
-print (num1, "X", num2)
+
 print("Resultado: ", resultado_da_multiplicação)
 
 
