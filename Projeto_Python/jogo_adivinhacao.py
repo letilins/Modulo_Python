@@ -1,6 +1,6 @@
 import random
 
-def adivinhacao():
+def  adivinhacao():
     
     limite_inferior = int(input("Digite o numero inferior do intervalo: "))
     limite_superior = int(input("Digite o numero superior do intervalo: "))
