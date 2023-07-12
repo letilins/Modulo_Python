@@ -17,6 +17,7 @@ def  adivinhacao():
     print(f"Estou pensando em um número entre {limite_inferior} e {limite_superior}.")
 
     while tentativas < max_tentativas:
+        
         palpite = int(input("Digite o seu palpite: "))
         tentativas += 1
 
