@@ -8,13 +8,15 @@ def  adivinhacao():
     
     limite_inferior = int(input("Digite o numero inferior do intervalo: "))
     limite_superior = int(input("Digite o numero superior do intervalo: "))
+    max_tentativas = int(input("Digite o numero áximo de tentativas: "))
+
     
     numero_secreto = random.randint(limite_inferior, limite_superior)  
-    max_tentativas = 5
+    
     tentativas = 0
 
     print("Bem-vindo ao jogo de adivinhação de números, ", jogador , "!")
-    print(f"Estou pensando em um número entre {limite_inferior} e {limite_superior}.")
+    print(f"Estou pensando em um número entre {limite_inferior} e {limite_superior}. E você tem no maximo {max_tentativas} tentativas.")
 
     while tentativas < max_tentativas:
         
@@ -30,16 +32,16 @@ def  adivinhacao():
             break
         print()
 
-    if palpite == numero_secreto:
+    if palpite == max_tentativas:
         print(f"Fim de jogo! O número secreto era {numero_secreto}")
         print()
         
-jogo_novamente = input("Quer jogar novamente? (s = Sim ou n = Não): ")
+jogo_novamente = input("\nQuer jogar novamente? (s = Sim ou n = Não): ")
 print()
 
 if jogo_novamente.lower() == "s":
     adivinhacao()
 else:
-    print("Fim de Jogo.... Obrigado por jogar!", "\n")
+    print("\nFim de Jogo.... Obrigado por jogar!")
     
 adivinhacao()
