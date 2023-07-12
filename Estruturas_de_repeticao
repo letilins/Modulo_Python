@@ -1,0 +1,21 @@
+vidinhas = 5;
+numeroSecreto = 50;
+
+#numeroSecreto = random();
+
+palpite = int(input("Digite um número: "))
+
+while palpite != numeroSecreto or vidinhas > 0:
+	if vidinhas > 0 :
+		vidinhas -= 1;
+		print("Você errou!");
+		print("Você tem mais" + str(vidinhas) + "tentativas");
+		if palpite > numeroSecreto :
+			Palpite = int(input("Digite um novo número MENOR: "));
+		if  palpite < numeroSecreto :
+			Palpite = int(input("Digite um novo número MAIOR: "));
+	if vidinhas == 0 :
+		print ("Você perdeu");
+		break
+	
+print("Parabéns, você acertou!")

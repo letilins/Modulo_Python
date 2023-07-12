@@ -36,12 +36,12 @@ def  adivinhacao():
         print(f"Fim de jogo! O número secreto era {numero_secreto}")
         print()
         
-jogo_novamente = input("\nQuer jogar novamente? (s = Sim ou n = Não): ")
-print()
+    jogo_novamente = input("\nQuer jogar novamente? (s = Sim ou n = Não): ")
+    print()
 
-if jogo_novamente.lower() == "s":
-    adivinhacao()
-else:
-    print("\nFim de Jogo.... Obrigado por jogar!")
+    if jogo_novamente.lower() == "s":
+        adivinhacao()
+    else:
+        print("\nFim de Jogo.... Obrigado por jogar!")
     
-adivinhacao()
+    adivinhacao()
