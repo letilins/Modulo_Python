@@ -8,7 +8,7 @@ def  adivinhacao():
     
     limite_inferior = int(input("Digite o numero inferior do intervalo: "))
     limite_superior = int(input("Digite o numero superior do intervalo: "))
-    max_tentativas = int(input("Digite o numero áximo de tentativas: "))
+    max_tentativas = int(input("Digite o numero máximo de tentativas: "))
 
     
     numero_secreto = random.randint(limite_inferior, limite_superior)  
