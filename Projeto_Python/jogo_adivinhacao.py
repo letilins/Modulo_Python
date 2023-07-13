@@ -10,7 +10,6 @@ def  adivinhacao():
     limite_superior = int(input("Digite o numero superior do intervalo: "))
     max_tentativas = int(input("Digite o numero máximo de tentativas: "))
 
-    
     numero_secreto = random.randint(limite_inferior, limite_superior)  
     
     tentativas = 0
@@ -44,4 +43,4 @@ def  adivinhacao():
     else:
         print("\nFim de Jogo.... Obrigado por jogar!")
     
-    adivinhacao()
+adivinhacao()
